@@ -1,3 +1,34 @@
-header {
-    background-color: darkcyan;
+nav {
+    background-color:purple;
+    height: 3em;
+    margin: 0;
 }
+
+nav ul {
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    position : fixed;
+}
+
+nav li {
+    margin-left:2px;
+    float:left; /*pour IE*/
+    background-color: transparent;
+}
+
+nav ul li a {
+    display:block;
+    float:left;   
+    width:100px;
+    background-color:transparent;
+    color:white;
+    text-decoration:none;
+    text-align:center;
+    padding:5px;
+    border:none;
+ }
+
+ body {
+     background-color: rgb(241, 198, 241);
+ }
