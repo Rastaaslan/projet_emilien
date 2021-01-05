@@ -1,3 +1,7 @@
+body {
+    font-family: 'Arial';
+}
+
 nav {
     background-color:purple;
     height: 3em;
@@ -31,4 +35,13 @@ nav ul li a {
 
  body {
      background-color: rgb(241, 198, 241);
+ }
+
+ #listeDonneesItem {
+     border: purple solid 2px;
+     margin: 20px;
+     background-color: white;
+     padding: 10px;
+     border-radius: 10px;
+    width: 30%;
  }

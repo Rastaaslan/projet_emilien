@@ -10,22 +10,12 @@
 <body>
     <nav>
         <ul>
-            <li><a href="index.html?page=accueil">Accueil</a></li>
-            <li><a href="index.html?page=contacts">Mes Contacts</a></li>
+            <li><a href="index.html?page=accueil" id="linkAccueil">Accueil</a></li>
+            <li><a href="index.html?page=contacts" id="linkContact">Mes Contacts</a></li>
 
         </ul>
     </nav>
     <div id="content"></div>
-    <script>
-        let params = new URLSearchParams(document.location.search.substring(1));
-        let pageValue = params.get("page");
-        let divContent = document.getElementById("content");
-        if(pageValue === "accueil" || pageValue === null) {
-            divContent.innerHTML = "<p>Bienvenue sur la page d'accueil de mon site</p>"
-        } else if (pageValue === "contacts") {
-            divContent.innerHTML = "<p>Bienvenue sur la page des contacts de mon site</p>"
-        }
-
-    </script>
+    <script src="app.js"></script>
 </body>
 </html>
