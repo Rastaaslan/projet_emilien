@@ -52,12 +52,15 @@ formLink.addEventListener('click', function (e) {
   formPost.appendChild(postPass)
 
   let postButton = document.createElement('button')
-  postButton.setAttribute('type', 'submit')
   postButton.innerHTML = "Valider"
   formPost.appendChild(postButton)
 
   postButton.addEventListener('click', function (e) { 
-    alert('Bah ouais connard, t\'as cliqué')
+    e.preventDefault()
+    let loginForm = document.forms['formPost']
+    let mailSaisi = loginForm.elements[0]
+    let passSaisi = loginForm.elements[1]  
+    alert('Adresse mail saisie: '+mailSaisi['value']+' Mdp: '+passSaisi['value'])
   })
 
 })
