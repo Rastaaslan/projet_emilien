@@ -28,11 +28,14 @@ let getHttpRequest = function () {
 }
 
 let content = document.getElementById("content")
+
 let contactLink = document.getElementById("linkContact")
 let accueilLink = document.getElementById("linkAccueil")
+
 contactLink.addEventListener('click', function (e) {
   e.preventDefault()
   let httpRequest = getHttpRequest()
+
   httpRequest.onreadystatechange = function () {
     if (httpRequest.readyState === 4){
         let donnees = JSON.parse(httpRequest.responseText)
