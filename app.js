@@ -31,8 +31,46 @@ let content = document.getElementById("content")
 
 let contactLink = document.getElementById("linkContact")
 let accueilLink = document.getElementById("linkAccueil")
+let formLink = document.getElementById("linkForm")
+
+
+formLink.addEventListener('click', function (e) {
+  e.preventDefault()
+  content.innerHTML = ''
+  let formPost = document.createElement('form')
+  formPost.setAttribute('name', 'formPost')
+  content.appendChild(formPost)
+
+  let postMail = document.createElement('input')
+  postMail.setAttribute('name', 'mail')
+  postMail.setAttribute('type', 'mail')
+  formPost.appendChild(postMail)
+
+  let postPass = document.createElement('input')
+  postPass.setAttribute('name', 'password')
+  postPass.setAttribute('type', 'password')
+  formPost.appendChild(postPass)
+
+  let postButton = document.createElement('button')
+  postButton.setAttribute('type', 'submit')
+  postButton.innerHTML = "Valider"
+  formPost.appendChild(postButton)
+
+  postButton.addEventListener('click', function (e) { 
+    alert('Bah ouais connard, t\'as cliqué')
+  })
+
+})
+
+
+accueilLink.addEventListener('click', function (e) {
+  e.preventDefault()
+  content.innerHTML = "Vous êtes bien sur la page d'accueil poto"
+})
+
 
 contactLink.addEventListener('click', function (e) {
+  content.innerHTML = ''
   e.preventDefault()
   let httpRequest = getHttpRequest()
 

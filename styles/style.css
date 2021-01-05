@@ -5,7 +5,7 @@ body {
 nav {
     background-color:purple;
     height: 3em;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 nav ul {
@@ -45,4 +45,8 @@ nav ul li a {
      border-radius: 10px;
     width: 30%;
     color:purple;
+ }
+
+ .boutonNav {
+     width: auto;
  }
