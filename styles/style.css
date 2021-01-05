@@ -3,7 +3,7 @@ body {
 }
 
 nav {
-    background-color:purple;
+    background-color:rgb(40, 40, 156);
     height: 3em;
     margin-bottom: 20px;
 }
@@ -34,17 +34,17 @@ nav ul li a {
  }
 
  body {
-     background-color: rgb(241, 198, 241);
+     background-color: rgb(197, 211, 255);
  }
 
  #listeDonneesItem {
-     border: purple solid 2px;
+     border: rgb(40, 40, 156) solid 2px;
      margin: 20px;
      background-color: white;
      padding: 10px;
      border-radius: 10px;
     width: 30%;
-    color:purple;
+    color:rgb(40, 40, 156);
  }
 
  .boutonNav {
